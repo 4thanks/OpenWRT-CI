@@ -4,6 +4,8 @@ CONFIG_TARGET_ipq40xx_generic=y
 #设备列表
 CONFIG_TARGET_ipq40xx_generic_DEVICE_mobipromo_cm520-79f=y
 CONFIG_TARGET_DEVICE_ipq40xx_generic_DEVICE_mobipromo_cm520-79f=y
+CONFIG_PACKAGE_mosdns=y
+CONFIG_PACKAGE_cdnspeedtest=y
 
 #WIFI驱动
 CONFIG_PACKAGE_kmod-ath11k=y
