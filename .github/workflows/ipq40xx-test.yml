@@ -37,9 +37,6 @@ jobs:
           - TARGET: ipq40xx
             SOURCE: immortalwrt/immortalwrt
             BRANCH: openwrt-21.02
-          - TARGET: ipq40xx
-            SOURCE: immortalwrt/immortalwrt
-            BRANCH: master
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
