@@ -148,6 +148,7 @@ jobs:
       - name: Update Feeds
         run: |
           cd ./wrt/
+          cp -r -f ./package/luci-app-mosdns/mosdns/Makefile ./feeds/packages/net/mosdns/Makefile
 
           ./scripts/feeds update -a
           ./scripts/feeds install -a
