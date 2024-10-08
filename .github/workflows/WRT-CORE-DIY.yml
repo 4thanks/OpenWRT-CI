@@ -148,7 +148,6 @@ jobs:
       - name: Update Feeds
         run: |
           cd ./wrt/
-          cp -r -f ./package/luci-app-mosdns/mosdns/Makefile ./feeds/packages/net/mosdns/Makefile
 
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -159,6 +158,7 @@ jobs:
 
           $GITHUB_WORKSPACE/Scripts/Packages-diy.sh
           $GITHUB_WORKSPACE/Scripts/Handles.sh
+          cp -r -f ./luci-app-mosdns/mosdns/Makefile ./feeds/packages/net/mosdns/Makefile
 
       - name: Custom Settings
         run: |
